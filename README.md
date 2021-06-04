@@ -19,6 +19,7 @@ console.log(result);
 ## Validator
 
 Return Boolean - true (or) false
+
 If cc is validated by **Luhn**,it will return `true`,if not it will be `false`;
 
 ```js
