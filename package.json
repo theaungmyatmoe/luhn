@@ -1,5 +1,5 @@
 {
-  "name": "amm834/luhn",
+  "name": "@amm834/luhn",
   "version": "1.0.2",
   "description": "",
   "main": "luhn.js",
