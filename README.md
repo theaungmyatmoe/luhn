@@ -1,5 +1,8 @@
 # Luhn Algorithm
 
+![npm (scoped)](https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@amm834/luhn?logo=npm&style=plastic)
+
 Luhn algorithm that can validate the cc - Credit Card numbers.
 
 # Usage
