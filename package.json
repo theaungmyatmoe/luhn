@@ -1,6 +1,6 @@
 {
-  "name": "luhn",
-  "version": "1.0.0",
+  "name": "@amm834/luhn",
+  "version": "1.0.1",
   "description": "",
   "main": "luhn.js",
   "type":"module",
