@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
+"publishConfig": {
+  "registry":"https://npm.pkg.github.com"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amm834/luhn.git"
