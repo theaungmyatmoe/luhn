@@ -11,9 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/amm834/luhn.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["luhn","cc"],
+  "author": "Aung Myat Moe",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/amm834/luhn/issues"
   },
