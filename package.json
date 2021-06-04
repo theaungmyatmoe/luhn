@@ -1,11 +1,11 @@
 {
   "name": "@amm834/luhn",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "",
   "main": "luhn.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
