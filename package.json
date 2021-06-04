@@ -1,0 +1,21 @@
+{
+  "name": "luhn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "luhn.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amm834/luhn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amm834/luhn/issues"
+  },
+  "homepage": "https://github.com/amm834/luhn#readme"
+}

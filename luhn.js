@@ -1,4 +1,4 @@
-export default class Validator {
+export default class Luhn {
   
   static validate(cc) {
     // change cc to Number array
