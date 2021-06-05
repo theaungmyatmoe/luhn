@@ -2,6 +2,7 @@
 
 ![npm (scoped)](https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@amm834/luhn?logo=npm&style=plastic)
+[![Node.js Package](https://github.com/amm834/luhn/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/amm834/luhn/actions/workflows/npm-publish.yml)
 
 Luhn algorithm that can validate the cc - Credit Card numbers is valid or not.
 
