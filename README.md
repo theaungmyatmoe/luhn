@@ -9,7 +9,7 @@
 [![Node.js Package](https://github.com/amm834/luhn/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/amm834/luhn/actions/workflows/npm-publish.yml)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=plastic)
 
-Luhn algorithm that can validate the cc - Credit Card numbers is valid or not.
+> Luhn algorithm that can validate the cc - Credit Card numbers is valid or not.
 
 # Usage
 
