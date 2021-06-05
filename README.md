@@ -1,5 +1,7 @@
 # Luhn Algorithm
 
+![npm](https://img.shields.io/npm/dw/@amm834/luhn?style=plastic)
+
 ![npm (scoped)](https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@amm834/luhn?logo=npm&style=plastic)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/amm834/luhn?include_prereleases&style=plastic)
