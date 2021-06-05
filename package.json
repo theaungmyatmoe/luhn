@@ -1,11 +1,11 @@
 {
   "name": "@amm834/luhn",
-  "version": "1.0.2",
-  "description": "",
-  "main": "luhn.js",
-  "type": "module",
+  "version": "1.0.5",
+  "description": "Credit Card Number Validator",
+  "main": "./lib/luhn.js",
+  "types": "./lib/luhn.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/amm834/luhn/issues"
   },
-  "homepage": "https://github.com/amm834/luhn#readme"
+  "homepage": "https://github.com/amm834/luhn#readme",
+  "devDependencies": {
+    "@types/node": "^15.12.1",
+    "typescript": "^4.3.2"
+  }
 }

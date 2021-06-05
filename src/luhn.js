@@ -1,9 +1,13 @@
+/**
+* Originally written in Vallina JS
+* but now changed to Typescript
+* */
 export default class Luhn {
-  
+
   static validate(cc) {
     // change cc to Number array
-    cc = Array.from(String(cc),Number);
-    
+    cc = Array.from(String(cc), Number);
+
     // Luhn Alogorithom to check cc is valid or not
     let sum = 0;
     for (let i = 0; i <= cc.length - 1; i++) {
@@ -16,6 +20,5 @@ export default class Luhn {
     }
     return sum % 10 === 0;
   }
-  
-}
 
+}
