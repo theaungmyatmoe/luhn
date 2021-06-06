@@ -30,9 +30,5 @@ console.log(result); // => true
 If cc is validated by **Luhn**,it will return `true`,if not it will be `false`;
 
 ```js
-/**
-* @param number | string number
-* @return boolean
-**/
-Luhn.validate(4895048712071025);
+Luhn.validate()
 ```

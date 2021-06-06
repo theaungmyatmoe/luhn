@@ -1,1 +1,1 @@
-{"version":3,"file":"luhn.d.ts","sourceRoot":"","sources":["../src/luhn.ts"],"names":[],"mappings":"AAAA,cAAM,IAAI;IAEN,MAAM,CAAC,QAAQ,CAAC,EAAE,EAAE,GAAG,GAAG,OAAO;CAepC"}
+{"version":3,"file":"luhn.d.ts","sourceRoot":"","sources":["../src/luhn.ts"],"names":[],"mappings":"AAAA,cAAM,IAAI;IACN;;;;MAIE;WACY,QAAQ,CAAC,EAAE,EAAE,GAAG,GAAG,OAAO;CAe3C"}

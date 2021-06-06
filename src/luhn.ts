@@ -1,12 +1,16 @@
 class Luhn {
-
-    static validate(cc: any): boolean {
-        // change cc to Number Object array
+    /**
+    * @description Validatator of Credit Card Numbers
+    * @param cc
+    * @returns Validation result of Credit Card Nunbers that are valid or not
+    */
+    public static validate(cc: any): boolean {
+        // Change to number object
         cc = Array.from(String(cc), Number);
-        // Luhn Alogorithom to check cc is valid or not
-        let sum = 0;
+        // Luhn Alogorithom
+        let sum: number = 0;
         for (let i = 0; i <= cc.length - 1; i++) {
-            let digit = cc[i];
+            let digit: number = cc[i];
             if (i % 2 === 0) {
                 digit *= 2;
                 if (digit > 9) digit -= 9;
