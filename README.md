@@ -15,7 +15,6 @@
 
 You can check and validate the credit numbers that are valid or not 👀.
 
-=======
 # Installations
 
 ```bash
