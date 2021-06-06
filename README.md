@@ -25,7 +25,7 @@ console.log(result); // => true
 
 # API Documentation
 
-https://amm834.github.io/luhn/
+[https://amm834.github.io/luhn/](https://amm834.github.io/luhn/)
 
 
 # Instance Methods
