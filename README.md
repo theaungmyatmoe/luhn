@@ -13,13 +13,110 @@
 
 > Luhn algorithm that can validate the cc - Credit Card numbers is valid or not.
 
+You can check and validate the credit numbers that are valid or not 👀.
+
 # Usage
+
+How easy it is?
 
 ```js
 import Luhn from '@amm834/luhn';
-const card_number = 4895048712071025;
-const result = Luhn.validate(card_number);
+const cc = 4895048712071025; // Credit Card Numbers
+const result = Luhn.validate(card_number); // Vaidation Result
 console.log(result); // => true
+```
+
+
+# Installation
+
+### npm
+
+```bash
+npm install -D @amm834/luhn
+```
+
+### yarn
+
+```bash
+yarn add @amm834/luhn
+```
+
+# Module Style Guide
+
+## NodeJS
+
+```js
+import Luhn from '@amm834/luhn';
+// some cool stuffs ...
+```
+
+## CommonJS 
+
+```js
+const Luhn = require('amm834/luhn');
+// some cool stuffs ...
+```
+
+## Browser
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script src="path/to/luhn.js" type="module"></script>
+<script>
+    import Luhn from '@amm834/luhn'
+    // some cool stuffs ...
+</script>
+</body>
+</html>
+```
+
+## CDN Usage
+
+Using the CDN,you don't need to download or install to your local machine but it will need internect connection.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script src="link/from/cdn-links" type="module"></script>
+<script>
+    import Luhn from '@amm834/luhn'
+    // some cool stuffs ...
+</script>
+</body>
+</html>
+```
+
+# CDN Links
+
+You can connect `Luhn` via -
+
+### Unpkg
+
+```
+https://unpkg.com/@amm834/luhn@1.0.6/lib/luhn.js
+```
+
+### Jsdelivr
+
+```
+https://cdn.jsdelivr.net/npm/@amm834/luhn@1.0.6/lib/luhn.js
 ```
 
 # API Documentation
@@ -33,12 +130,8 @@ console.log(result); // => true
 
 # Validation
 
-If cc is validated by **Luhn**,it will return `true`,if not it will be `false`;
+If card numbers are valide,it will return true.
 
 ```js
-Luhn.validate()
+Luhn.validate(cc);
 ```
-
-
-
-

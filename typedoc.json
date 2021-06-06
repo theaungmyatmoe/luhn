@@ -1,4 +1,0 @@
-{
-    "entryPoints": ["src/luhn.ts"],
-    "out": "docs"
-}
