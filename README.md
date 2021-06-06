@@ -23,12 +23,23 @@ const result = Luhn.validate(card_number);
 console.log(result); // => true
 ```
 
-# APIs
+# API Documentation
 
-## Validation
+https://amm834.github.io/luhn/
+
+
+# Instance Methods
+
+#### Luhn.validate(cc)
+
+# Validation
 
 If cc is validated by **Luhn**,it will return `true`,if not it will be `false`;
 
 ```js
 Luhn.validate()
 ```
+
+
+
+
