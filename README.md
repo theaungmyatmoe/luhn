@@ -15,6 +15,17 @@
 
 You can check and validate the credit numbers that are valid or not 👀.
 
+=======
+# Installations
+
+```bash
+npm install @amm834/luhn
+
+# or
+
+yarn add @amm834/luhn
+```
+
 # Usage
 
 How easy it is?
