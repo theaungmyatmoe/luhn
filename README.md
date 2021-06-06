@@ -13,6 +13,15 @@
 
 > Luhn algorithm that can validate the cc - Credit Card numbers is valid or not.
 
+# Installations
+
+```bash
+npm install @amm834/luhn
+
+# or
+
+yarn add @amm834/luhn
+```
 # Usage
 
 ```js
