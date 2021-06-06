@@ -14,7 +14,11 @@
   },
   "keywords": [
     "luhn",
-    "cc"
+    "cc",
+    "luhn algorithm",
+    "credit card number validator",
+    "validation",
+    "cc validator"
   ],
   "author": "Aung Myat Moe",
   "license": "MIT",
