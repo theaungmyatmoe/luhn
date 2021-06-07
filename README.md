@@ -18,7 +18,7 @@ You can check and validate the credit numbers that are valid or not 👀.
 # Installations
 
 ```bash
-npm install @amm834/luhn
+npm install -D  @amm834/luhn
 
 # or
 
@@ -34,21 +34,6 @@ import Luhn from '@amm834/luhn';
 const cc = 4895048712071025; // Credit Card Numbers
 const result = Luhn.validate(card_number); // Vaidation Result
 console.log(result); // => true
-```
-
-
-# Installation
-
-### npm
-
-```bash
-npm install -D @amm834/luhn
-```
-
-### yarn
-
-```bash
-yarn add @amm834/luhn
 ```
 
 # Module Style Guide
