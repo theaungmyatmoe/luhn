@@ -1,6 +1,6 @@
 {
   "name": "@amm834/luhn",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Credit Card Number Validator",
   "main": "./lib/luhn.js",
   "types": "./lib/luhn.d.ts",
@@ -19,7 +19,8 @@
     "luhn algorithm",
     "credit card number validator",
     "validation",
-    "cc validator"
+    "cc validator",
+    "validator"
   ],
   "author": "Aung Myat Moe",
   "license": "MIT",
