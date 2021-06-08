@@ -1,12 +1,12 @@
-module.exports = class Luhn {
+class Luhn {
     /**
     * @description Validatator of Credit Card Numbers
-    * @param cc Credit Card Numbers
+    * @param pan Credit Card Numbers
     * @returns Validation result of Credit Card Nunbers that are valid or not
     */
-    public static validate(cc: any): boolean {
+    public static validate(pan: any): boolean {
         // Change to number object
-        cc = Array.from(String(cc), Number);
+        const  cc = Array.from(String(pan), Number);
         // Luhn Alogorithom
         let sum: number = 0;
         for (let i = 0; i <= cc.length - 1; i++) {
@@ -20,3 +20,5 @@ module.exports = class Luhn {
         return sum % 10 === 0;
     }
 }
+
+console.log(Luhn.validate(124))

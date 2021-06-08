@@ -6,7 +6,8 @@
   "types": "./lib/luhn.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "prepare":"tsc"
   },
   "repository": {
     "type": "git",
