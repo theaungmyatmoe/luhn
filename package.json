@@ -1,6 +1,6 @@
 {
   "name": "@amm834/luhn",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Credit Card Number Validator",
   "main": "./lib/luhn.js",
   "types": "./lib/luhn.d.ts",
