@@ -61,8 +61,9 @@
 				<a href="#luhn-algorithm" id="luhn-algorithm" style="color: inherit; text-decoration: none;">
 					<h1>Luhn Algorithm</h1>
 				</a>
-				<p><img src="https://img.shields.io/npm/dw/@amm834/luhn?style=plastic" alt="npm"></p>
-				<p><img src="https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic" alt="npm (scoped)">
+				<p><img src="https://img.shields.io/npm/dw/@amm834/luhn?style=plastic" alt="npm">
+					<a href="https://github.com/amm834/luhn/actions/workflows/test.yml"><img src="https://github.com/amm834/luhn/actions/workflows/test.yml/badge.svg" alt="Lint and test"></a>
+					<img src="https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic" alt="npm (scoped)">
 					<img src="https://img.shields.io/bundlephobia/min/@amm834/luhn?logo=npm&style=plastic" alt="npm bundle size (scoped)">
 					<img src="https://img.shields.io/github/v/release/amm834/luhn?include_prereleases&style=plastic" alt="GitHub release (latest by date including pre-releases)">
 				<img src="https://img.shields.io/npm/l/@amm834/luhn?style=plastic" alt="NPM"></p>
@@ -80,13 +81,13 @@
 
 <span style="color: #008000"># or</span>
 
-<span style="color: #000000">yarn add @amm834/luhn</span>
+<span style="color: #000000">yarn add -D @amm834/luhn</span>
 </code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h1>Usage</h1>
 				</a>
 				<p>How easy it is?</p>
-				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">Luhn</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Luhn</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span><span style="color: #000000">;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">cc</span><span style="color: #000000"> = </span><span style="color: #098658">4895048712071025</span><span style="color: #000000">; </span><span style="color: #008000">// Credit Card Numbers</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">Luhn</span><span style="color: #000000">.</span><span style="color: #795E26">validate</span><span style="color: #000000">(</span><span style="color: #001080">card_number</span><span style="color: #000000">); </span><span style="color: #008000">// Vaidation Result</span>
 <span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
@@ -97,33 +98,27 @@
 				<a href="#nodejs" id="nodejs" style="color: inherit; text-decoration: none;">
 					<h2>NodeJS</h2>
 				</a>
-				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">Luhn</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Luhn</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span><span style="color: #000000">;</span>
 <span style="color: #008000">// some cool stuffs ...</span>
 </code></pre>
 				<a href="#commonjs" id="commonjs" style="color: inherit; text-decoration: none;">
 					<h2>CommonJS</h2>
 				</a>
-				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">Luhn</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;amm834/luhn&#039;</span><span style="color: #000000">);</span>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> {</span><span style="color: #0070C1">Luhn</span><span style="color: #000000">} = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;amm834/luhn&#039;</span><span style="color: #000000">);</span>
 <span style="color: #008000">// some cool stuffs ...</span>
 </code></pre>
 				<a href="#browser" id="browser" style="color: inherit; text-decoration: none;">
 					<h2>Browser</h2>
 				</a>
-				<pre><code class="language-html"><span style="color: #800000">&lt;!DOCTYPE</span><span style="color: #000000"> </span><span style="color: #FF0000">html</span><span style="color: #800000">&gt;</span>
-<span style="color: #800000">&lt;html</span><span style="color: #000000"> </span><span style="color: #FF0000">lang</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;en&quot;</span><span style="color: #800000">&gt;</span>
+				<pre><code class="language-html"><span style="color: #800000">&lt;html&gt;</span>
 <span style="color: #800000">&lt;head&gt;</span>
-<span style="color: #000000">    </span><span style="color: #800000">&lt;meta</span><span style="color: #000000"> </span><span style="color: #FF0000">charset</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;UTF-8&quot;</span><span style="color: #800000">&gt;</span>
-<span style="color: #000000">    </span><span style="color: #800000">&lt;meta</span><span style="color: #000000"> </span><span style="color: #FF0000">name</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;viewport&quot;</span><span style="color: #000000"> </span><span style="color: #FF0000">content</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #800000">&gt;</span>
-<span style="color: #000000">    </span><span style="color: #800000">&lt;meta</span><span style="color: #000000"> </span><span style="color: #FF0000">http-equiv</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;X-UA-Compatible&quot;</span><span style="color: #000000"> </span><span style="color: #FF0000">content</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;ie=edge&quot;</span><span style="color: #800000">&gt;</span>
-<span style="color: #000000">    </span><span style="color: #800000">&lt;title&gt;</span><span style="color: #000000">Document</span><span style="color: #800000">&lt;/title&gt;</span>
+<span style="color: #000000">  </span><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;./path/to/luhn.js&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
 <span style="color: #800000">&lt;/head&gt;</span>
 <span style="color: #800000">&lt;body&gt;</span>
-
-<span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;path/to/luhn.js&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
-<span style="color: #800000">&lt;script&gt;</span>
-<span style="color: #000000FF">    </span><span style="color: #AF00DB">import</span><span style="color: #000000FF"> </span><span style="color: #001080">Luhn</span><span style="color: #000000FF"> </span><span style="color: #AF00DB">from</span><span style="color: #000000FF"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span>
-<span style="color: #000000FF">    </span><span style="color: #008000">// some cool stuffs ...</span>
-<span style="color: #800000">&lt;/script&gt;</span>
+<span style="color: #000000">  </span><span style="color: #800000">&lt;script&gt;</span>
+<span style="color: #000000FF">    </span><span style="color: #0000FF">const</span><span style="color: #000000FF"> </span><span style="color: #0070C1">cc</span><span style="color: #000000FF"> </span><span style="color: #000000">=</span><span style="color: #000000FF"> </span><span style="color: #098658">4895048712071025</span><span style="color: #000000FF">;</span>
+<span style="color: #000000FF">    </span><span style="color: #001080">console</span><span style="color: #000000FF">.</span><span style="color: #795E26">log</span><span style="color: #000000FF">(</span><span style="color: #001080">Luhn</span><span style="color: #000000FF">.</span><span style="color: #795E26">validate</span><span style="color: #000000FF">(</span><span style="color: #001080">cc</span><span style="color: #000000FF">)) </span><span style="color: #008000">// =&gt; true</span>
+<span style="color: #000000FF">  </span><span style="color: #800000">&lt;/script&gt;</span>
 <span style="color: #800000">&lt;/body&gt;</span>
 <span style="color: #800000">&lt;/html&gt;</span>
 </code></pre>
@@ -141,11 +136,10 @@
 <span style="color: #800000">&lt;/head&gt;</span>
 <span style="color: #800000">&lt;body&gt;</span>
 
-<span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;link/from/cdn-links&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+<span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;link/from/cdn-links&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
 <span style="color: #800000">&lt;script&gt;</span>
-<span style="color: #000000FF">    </span><span style="color: #AF00DB">import</span><span style="color: #000000FF"> </span><span style="color: #001080">Luhn</span><span style="color: #000000FF"> </span><span style="color: #AF00DB">from</span><span style="color: #000000FF"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span>
-<span style="color: #000000FF">    </span><span style="color: #008000">// some cool stuffs ...</span>
-<span style="color: #800000">&lt;/script&gt;</span>
+<span style="color: #000000FF">  </span><span style="color: #0000FF">const</span><span style="color: #000000FF"> </span><span style="color: #0070C1">cc</span><span style="color: #000000FF"> </span><span style="color: #000000">=</span><span style="color: #000000FF"> </span><span style="color: #098658">4895048712071025</span><span style="color: #000000FF">;</span>
+<span style="color: #000000FF">  </span><span style="color: #001080">console</span><span style="color: #000000FF">.</span><span style="color: #795E26">log</span><span style="color: #000000FF">(</span><span style="color: #001080">Luhn</span><span style="color: #000000FF">.</span><span style="color: #795E26">validate</span><span style="color: #000000FF">(</span><span style="color: #001080">cc</span><span style="color: #000000FF">)) </span><span style="color: #008000">// =&gt; true</span><span style="color: #800000">&lt;/script&gt;</span>
 <span style="color: #800000">&lt;/body&gt;</span>
 <span style="color: #800000">&lt;/html&gt;</span>
 </code></pre>
@@ -191,9 +185,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="classes/luhn.html" class="tsd-kind-icon">Luhn</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -203,12 +194,6 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
 		</div>
 	</div>
 </footer>
