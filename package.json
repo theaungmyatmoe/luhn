@@ -1,6 +1,6 @@
 {
   "name": "@amm834/luhn",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Credit Card Number Validator",
   "main": "./lib/tsc/luhn.js",
   "types": "./lib/tsc/luhn.d.ts",
@@ -9,7 +9,8 @@
     "prepare": "tsc -p . && npm run build-browser",
     "build": "tsc -p .",
     "build-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=lib/esbuild/luhn.js",
-    "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js"
+    "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,11 @@
   },
   "homepage": "https://github.com/amm834/luhn#readme",
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@types/node": "^15.12.1",
     "esbuild": "^0.12.8",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
     "typedoc": "^0.20.36",
     "typescript": "^4.3.2"
   }
