@@ -22,7 +22,7 @@ npm install -D  @amm834/luhn
 
 # or
 
-yarn add @amm834/luhn
+yarn add -D @amm834/luhn
 ```
 
 # Usage
@@ -55,21 +55,15 @@ const Luhn = require('amm834/luhn');
 ## Browser
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <script src="./path/to/luhn.js"></script>
 </head>
 <body>
-
-<script src="path/to/luhn.js" type="module"></script>
-<script>
-    import Luhn from '@amm834/luhn'
-    // some cool stuffs ...
-</script>
+  <script>
+    const cc = 4895048712071025;
+    console.log(Luhn.validate(cc)) // => true
+  </script>
 </body>
 </html>
 ```
@@ -89,11 +83,10 @@ Using the CDN,you don't need to download or install to your local machine but it
 </head>
 <body>
 
-<script src="link/from/cdn-links" type="module"></script>
+<script src="link/from/cdn-links"></script>
 <script>
-    import Luhn from '@amm834/luhn'
-    // some cool stuffs ...
-</script>
+  const cc = 4895048712071025;
+  console.log(Luhn.validate(cc)) // => true</script>
 </body>
 </html>
 ```

@@ -1,4 +1,4 @@
-module.exports = class Luhn {
+class Luhn {
   /**
   * @description Validatator of Credit Card Numbers
   * @param cc Credit Card Numbers
@@ -20,3 +20,5 @@ module.exports = class Luhn {
     return sum % 10 === 0;
   }
 }
+
+export default Luhn;

@@ -5,7 +5,10 @@
   "main": "./lib/luhn.js",
   "types": "./lib/luhn.d.ts",
   "scripts": {
-    "prepare":"tsc -p ."
+    "prepare": "tsc -p . && npm run build-browser",
+    "build": "tsc -p .",
+    "build-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=lib/esbuild/luhn.js",
+    "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +18,7 @@
     "luhn",
     "cc",
     "luhn algorithm",
-    "credit card number validator",
+    "credit card numbers validator",
     "validation",
     "cc validator",
     "validator"
@@ -28,6 +31,7 @@
   "homepage": "https://github.com/amm834/luhn#readme",
   "devDependencies": {
     "@types/node": "^15.12.1",
+    "esbuild": "^0.12.8",
     "typedoc": "^0.20.36",
     "typescript": "^4.3.2"
   }
