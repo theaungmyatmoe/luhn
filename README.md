@@ -30,7 +30,7 @@ yarn add -D @amm834/luhn
 How easy it is?
 
 ```js
-import Luhn from '@amm834/luhn';
+import {Luhn} from '@amm834/luhn';
 const cc = 4895048712071025; // Credit Card Numbers
 const result = Luhn.validate(card_number); // Vaidation Result
 console.log(result); // => true
@@ -41,14 +41,14 @@ console.log(result); // => true
 ## NodeJS
 
 ```js
-import Luhn from '@amm834/luhn';
+import {Luhn} from '@amm834/luhn';
 // some cool stuffs ...
 ```
 
 ## CommonJS 
 
 ```js
-const Luhn = require('amm834/luhn');
+const {Luhn} = require('amm834/luhn');
 // some cool stuffs ...
 ```
 

@@ -1,3 +1,3 @@
-import Luhn from './luhn';
+import {Luhn} from './luhn';
 
 (window as any).Luhn = Luhn;

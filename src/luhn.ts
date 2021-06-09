@@ -1,4 +1,4 @@
-class Luhn {
+export class Luhn {
   /**
   * @description Validatator of Credit Card Numbers
   * @param cc Credit Card Numbers
@@ -20,5 +20,3 @@ class Luhn {
     return sum % 10 === 0;
   }
 }
-
-export default Luhn;
