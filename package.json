@@ -7,6 +7,7 @@
   "browser": "./lib/esbuild/luhn.js",
   "scripts": {
     "prepare": "tsc -p . && npm run build-browser",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "build": "tsc -p .",
     "build-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=lib/esbuild/luhn.js",
     "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js",
@@ -34,7 +35,10 @@
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
     "esbuild": "^0.12.8",
+    "eslint": "^7.28.0",
     "jest": "^27.0.4",
     "ts-jest": "^27.0.3",
     "typedoc": "^0.20.36",

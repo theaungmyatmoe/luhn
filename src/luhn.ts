@@ -8,7 +8,7 @@ export class Luhn {
     // Change to number object
     cc = Array.from(String(cc), Number);
     // Luhn Alogorithom
-    let sum: number = 0;
+    let sum = 0;
     for (let i = 0; i <= cc.length - 1; i++) {
       let digit: number = cc[i];
       if (i % 2 === 0) {
