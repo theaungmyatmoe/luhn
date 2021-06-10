@@ -10,7 +10,7 @@ on:
     #tags:
     #  - v*
     branches:
-      - master
+      - main
 
 jobs:
   deploy_pages:
@@ -21,8 +21,8 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '12'
-    - run: npm install -D typedoc
-    - run: npx typedoc --entryPoints src/luhn.ts
+    - run: npm install
+    - run: npm run docs
 
     - run: touch docs/.nojekyll
     - name: Deploy docs 🚀
