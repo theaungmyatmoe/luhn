@@ -25,6 +25,7 @@ npm install -D  @amm834/luhn
 yarn add -D @amm834/luhn
 ```
 
+
 # Usage
 
 How easy it is?
@@ -35,6 +36,36 @@ const cc = 4895048712071025; // Credit Card Numbers
 const result = Luhn.validate(card_number); // Vaidation Result
 console.log(result); // => true
 ```
+
+# CLI Usage
+
+### Globally Installation
+
+```js
+npm install -g @amm834/luhn
+luhn --version # For Version
+```
+
+### Locally Installation
+
+```js
+npm install -D @amm834/luhn
+npx luhn --version
+```
+### Usage
+
+```bash
+~$ npx luhn --help
+Luhn Validator CLI 🐈✨                     This CLI application was developed by Au
+ng Myat Moe.
+
+    Usage : luhn <options> <card_numbers>
+    Options
+    --validate    Validate the card numbers
+    -h|--help     Show this usage               -v|--version  Show version number
+```
+
+
 
 # Module Style Guide
 
