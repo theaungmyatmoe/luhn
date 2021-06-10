@@ -11,6 +11,7 @@
     "build": "tsc -p .",
     "build-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=lib/esbuild/luhn.js",
     "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js",
+    "docs":"typedoc --entryPoints src/luhn.ts",
     "test": "jest"
   },
   "repository": {
