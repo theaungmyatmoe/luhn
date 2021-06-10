@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@amm834/luhn</title>
+	<meta name="description" content="Documentation for @amm834/luhn">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@amm834/luhn</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@amm834/luhn</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#luhn-algorithm" id="luhn-algorithm" style="color: inherit; text-decoration: none;">
+					<h1>Luhn Algorithm</h1>
+				</a>
+				<p><img src="https://img.shields.io/npm/dw/@amm834/luhn?style=plastic" alt="npm">
+					<a href="https://github.com/amm834/luhn/actions/workflows/test.yml"><img src="https://github.com/amm834/luhn/actions/workflows/test.yml/badge.svg" alt="Lint and test"></a>
+					<img src="https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic" alt="npm (scoped)">
+					<img src="https://img.shields.io/bundlephobia/min/@amm834/luhn?logo=npm&style=plastic" alt="npm bundle size (scoped)">
+					<img src="https://img.shields.io/github/v/release/amm834/luhn?include_prereleases&style=plastic" alt="GitHub release (latest by date including pre-releases)">
+				<img src="https://img.shields.io/npm/l/@amm834/luhn?style=plastic" alt="NPM"></p>
+				<p><a href="https://snyk.io/advisor/npm-package/@amm834/luhn"><img src="https://snyk.io/advisor/npm-package/@amm834/luhn/badge.svg" alt="@amm834/luhn"></a>
+					<img src="https://img.shields.io/librariesio/release/npm/@amm834/luhn?style=plastic" alt="Libraries.io dependency status for latest release, scoped npm package">
+				<img src="https://img.shields.io/maintenance/yes/2021?style=plastic" alt="Maintenance"></p>
+				<blockquote>
+					<p>Luhn algorithm that can validate the cc - Credit Card numbers is valid or not.</p>
+				</blockquote>
+				<p>You can check and validate the credit numbers that are valid or not 👀.</p>
+				<a href="#installations" id="installations" style="color: inherit; text-decoration: none;">
+					<h1>Installations</h1>
+				</a>
+				<pre><code class="language-bash"><span style="color: #000000">npm install -D  @amm834/luhn</span>
+
+<span style="color: #008000"># or</span>
+
+<span style="color: #000000">yarn add -D @amm834/luhn</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h1>Usage</h1>
+				</a>
+				<p>How easy it is?</p>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Luhn</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">cc</span><span style="color: #000000"> = </span><span style="color: #098658">4895048712071025</span><span style="color: #000000">; </span><span style="color: #008000">// Credit Card Numbers</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #001080">Luhn</span><span style="color: #000000">.</span><span style="color: #795E26">validate</span><span style="color: #000000">(</span><span style="color: #001080">card_number</span><span style="color: #000000">); </span><span style="color: #008000">// Vaidation Result</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">result</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
+</code></pre>
+				<a href="#module-style-guide" id="module-style-guide" style="color: inherit; text-decoration: none;">
+					<h1>Module Style Guide</h1>
+				</a>
+				<a href="#nodejs" id="nodejs" style="color: inherit; text-decoration: none;">
+					<h2>NodeJS</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Luhn</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@amm834/luhn&#039;</span><span style="color: #000000">;</span>
+<span style="color: #008000">// some cool stuffs ...</span>
+</code></pre>
+				<a href="#commonjs" id="commonjs" style="color: inherit; text-decoration: none;">
+					<h2>CommonJS</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> {</span><span style="color: #0070C1">Luhn</span><span style="color: #000000">} = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;amm834/luhn&#039;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// some cool stuffs ...</span>
+</code></pre>
+				<a href="#browser" id="browser" style="color: inherit; text-decoration: none;">
+					<h2>Browser</h2>
+				</a>
+				<pre><code class="language-html"><span style="color: #800000">&lt;html&gt;</span>
+<span style="color: #800000">&lt;head&gt;</span>
+<span style="color: #000000">  </span><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;./path/to/luhn.js&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+<span style="color: #800000">&lt;/head&gt;</span>
+<span style="color: #800000">&lt;body&gt;</span>
+<span style="color: #000000">  </span><span style="color: #800000">&lt;script&gt;</span>
+<span style="color: #000000FF">    </span><span style="color: #0000FF">const</span><span style="color: #000000FF"> </span><span style="color: #0070C1">cc</span><span style="color: #000000FF"> </span><span style="color: #000000">=</span><span style="color: #000000FF"> </span><span style="color: #098658">4895048712071025</span><span style="color: #000000FF">;</span>
+<span style="color: #000000FF">    </span><span style="color: #001080">console</span><span style="color: #000000FF">.</span><span style="color: #795E26">log</span><span style="color: #000000FF">(</span><span style="color: #001080">Luhn</span><span style="color: #000000FF">.</span><span style="color: #795E26">validate</span><span style="color: #000000FF">(</span><span style="color: #001080">cc</span><span style="color: #000000FF">)) </span><span style="color: #008000">// =&gt; true</span>
+<span style="color: #000000FF">  </span><span style="color: #800000">&lt;/script&gt;</span>
+<span style="color: #800000">&lt;/body&gt;</span>
+<span style="color: #800000">&lt;/html&gt;</span>
+</code></pre>
+				<a href="#cdn-usage" id="cdn-usage" style="color: inherit; text-decoration: none;">
+					<h2>CDN Usage</h2>
+				</a>
+				<p>Using the CDN,you don&#39;t need to download or install to your local machine but it will need internect connection.</p>
+				<pre><code class="language-html"><span style="color: #800000">&lt;!DOCTYPE</span><span style="color: #000000"> </span><span style="color: #FF0000">html</span><span style="color: #800000">&gt;</span>
+<span style="color: #800000">&lt;html</span><span style="color: #000000"> </span><span style="color: #FF0000">lang</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;en&quot;</span><span style="color: #800000">&gt;</span>
+<span style="color: #800000">&lt;head&gt;</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;meta</span><span style="color: #000000"> </span><span style="color: #FF0000">charset</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;UTF-8&quot;</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;meta</span><span style="color: #000000"> </span><span style="color: #FF0000">name</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;viewport&quot;</span><span style="color: #000000"> </span><span style="color: #FF0000">content</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;width=device-width, initial-scale=1.0&quot;</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;meta</span><span style="color: #000000"> </span><span style="color: #FF0000">http-equiv</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;X-UA-Compatible&quot;</span><span style="color: #000000"> </span><span style="color: #FF0000">content</span><span style="color: #000000">=</span><span style="color: #0000FF">&quot;ie=edge&quot;</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;title&gt;</span><span style="color: #000000">Document</span><span style="color: #800000">&lt;/title&gt;</span>
+<span style="color: #800000">&lt;/head&gt;</span>
+<span style="color: #800000">&lt;body&gt;</span>
+
+<span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;link/from/cdn-links&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+<span style="color: #800000">&lt;script&gt;</span>
+<span style="color: #000000FF">  </span><span style="color: #0000FF">const</span><span style="color: #000000FF"> </span><span style="color: #0070C1">cc</span><span style="color: #000000FF"> </span><span style="color: #000000">=</span><span style="color: #000000FF"> </span><span style="color: #098658">4895048712071025</span><span style="color: #000000FF">;</span>
+<span style="color: #000000FF">  </span><span style="color: #001080">console</span><span style="color: #000000FF">.</span><span style="color: #795E26">log</span><span style="color: #000000FF">(</span><span style="color: #001080">Luhn</span><span style="color: #000000FF">.</span><span style="color: #795E26">validate</span><span style="color: #000000FF">(</span><span style="color: #001080">cc</span><span style="color: #000000FF">)) </span><span style="color: #008000">// =&gt; true</span><span style="color: #800000">&lt;/script&gt;</span>
+<span style="color: #800000">&lt;/body&gt;</span>
+<span style="color: #800000">&lt;/html&gt;</span>
+</code></pre>
+				<a href="#cdn-links" id="cdn-links" style="color: inherit; text-decoration: none;">
+					<h1>CDN Links</h1>
+				</a>
+				<p>You can connect <code>Luhn</code> via -</p>
+				<a href="#unpkg" id="unpkg" style="color: inherit; text-decoration: none;">
+					<h3>Unpkg</h3>
+				</a>
+				<pre><code><span style="color: #000000">https:</span><span style="color: #008000">//unpkg.com/@amm834/luhn@1.0.6/lib/luhn.js</span>
+</code></pre>
+				<a href="#jsdelivr" id="jsdelivr" style="color: inherit; text-decoration: none;">
+					<h3>Jsdelivr</h3>
+				</a>
+				<pre><code><span style="color: #000000">https:</span><span style="color: #008000">//cdn.jsdelivr.net/npm/@amm834/luhn@1.0.6/lib/luhn.js</span>
+</code></pre>
+				<a href="#api-documentation" id="api-documentation" style="color: inherit; text-decoration: none;">
+					<h1>API Documentation</h1>
+				</a>
+				<p><a href="https://amm834.github.io/luhn/">https://amm834.github.io/luhn/</a></p>
+				<a href="#instance-methods" id="instance-methods" style="color: inherit; text-decoration: none;">
+					<h1>Instance Methods</h1>
+				</a>
+				<a href="#luhnvalidatecc" id="luhnvalidatecc" style="color: inherit; text-decoration: none;">
+					<h4>Luhn.validate(cc)</h4>
+				</a>
+				<a href="#validation" id="validation" style="color: inherit; text-decoration: none;">
+					<h1>Validation</h1>
+				</a>
+				<p>If card numbers are valide,it will return true.</p>
+				<pre><code class="language-js"><span style="color: #001080">Luhn</span><span style="color: #000000">.</span><span style="color: #795E26">validate</span><span style="color: #000000">(</span><span style="color: #001080">cc</span><span style="color: #000000">);</span>
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/luhn.html" class="tsd-kind-icon">Luhn</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
