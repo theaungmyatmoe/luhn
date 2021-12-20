@@ -18,11 +18,11 @@ You can check and validate the credit numbers that are valid or not 👀.
 # Installations
 
 ```bash
-npm install -D  @amm834/luhn
+npm install  @amm834/luhn
 
 # or
 
-yarn add -D @amm834/luhn
+yarn add @amm834/luhn
 ```
 
 
@@ -37,7 +37,7 @@ const result = Luhn.validate(card_number); // Vaidation Result
 console.log(result); // => true
 ```
 
-# CLI Usage
+# Installation
 
 ### Globally Installation
 
@@ -49,9 +49,10 @@ luhn --version # For Version
 ### Locally Installation
 
 ```js
-npm install -D @amm834/luhn
+npm install @amm834/luhn
 npx luhn --version
 ```
+
 ### Usage
 
 ```bash
@@ -69,14 +70,14 @@ ng Myat Moe.
 
 # Module Style Guide
 
-## NodeJS
+## ES6
 
 ```js
 import {Luhn} from '@amm834/luhn';
 // some cool stuffs ...
 ```
 
-## CommonJS 
+## Common JS
 
 ```js
 const {Luhn} = require('amm834/luhn');
