@@ -1,20 +1,21 @@
 {
   "name": "@amm834/luhn",
   "version": "1.3.2",
+  "packageManager": "pnpm@7.12.0",
   "description": "Credit Card Number Validator",
   "main": "./lib/tsc/luhn.js",
   "types": "./lib/tsc/luhn.d.ts",
-  "bin":{
-    "luhn":"./lib/tsc/cli.js"
+  "bin": {
+    "luhn": "./lib/tsc/cli.js"
   },
   "scripts": {
-    "prepare": "tsc -p . && npm run build-browser",
-    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "pnpm run build-browser",
     "build": "tsc -p .",
     "build-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=lib/esbuild/luhn.js",
     "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js",
-    "docs":"typedoc --entryPoints src/luhn.ts",
-    "test": "jest"
+    "docs": "typedoc --entryPoints src/luhn.ts",
+    "test": "vitest --run --reporter verbose"
   },
   "repository": {
     "type": "git",
@@ -36,18 +37,11 @@
   },
   "homepage": "https://github.com/amm834/luhn#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.1",
-    "@typescript-eslint/eslint-plugin": "^4.26.1",
-    "@typescript-eslint/parser": "^4.26.1",
-    "esbuild": "^0.12.8",
-    "eslint": "^7.28.0",
-    "jest": "^27.0.4",
-    "ts-jest": "^27.0.3",
-    "typedoc": "^0.20.36",
-    "typescript": "^4.3.2"
+    "@types/node": "^15.14.9",
+    "esbuild": "^0.12.29",
+    "vitest": "^0.23.4"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=16.11.0"
   }
 }
