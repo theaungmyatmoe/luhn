@@ -1,12 +1,17 @@
 <html>
 <head>
-  <script src="./lib/esbuild/luhn.js"></script>
+    <script src="./dist/luhn.js" type="module"></script>
 </head>
 <body>
-  Open the devtools 👇
-  <script>
-    const cc = 4895048712071025;
-    console.log(Luhn.validate(cc)) // => true
-  </script>
+Open the devtools 👇
+<script>
+    import createLuhn from "../dist/luhn.js";
+
+    const {validate} = createLuhn();
+
+    const pan = 4895048712071025;
+
+    console.log(validate(pan)) //→ true
+</script>
 </body>
 </html>
