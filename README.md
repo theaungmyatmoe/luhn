@@ -9,7 +9,7 @@
 
 [![@amm834/luhn](https://snyk.io/advisor/npm-package/@amm834/luhn/badge.svg)](https://snyk.io/advisor/npm-package/@amm834/luhn)
 ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@amm834/luhn?style=plastic)
-![Maintenance](https://img.shields.io/maintenance/yes/2021?style=plastic)
+![Maintenance](https://img.shields.io/maintenance/yes/2022?style=plastic)
 
 Luhn is a validation library the can validate Credit Card numbers which are valid or not. 👀
 
