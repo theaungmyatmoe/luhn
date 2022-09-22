@@ -1,20 +1,19 @@
 {
   "name": "@amm834/luhn",
-  "version": "1.3.2",
+  "version": "2.0.0",
+  "type": "module",
+  "main": "./dist/luhn.js",
+  "module": "./dist/luhn.js",
   "packageManager": "pnpm@7.12.0",
   "description": "Credit Card Number Validator",
-  "main": "./lib/tsc/luhn.js",
-  "types": "./lib/tsc/luhn.d.ts",
+  "types": "./dist/luhn.d.ts",
   "bin": {
-    "luhn": "./lib/tsc/cli.js"
+    "luhn": "bin/cli.js"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "prepare": "pnpm run build-browser",
-    "build": "tsc -p .",
-    "build-browser": "esbuild src/browser.ts --bundle --minify --sourcemap=external --outfile=lib/esbuild/luhn.js",
-    "esbuild-browser:dev": "esbuild src/browser.ts --bundle --outfile=lib/esbuild/luhn.js",
-    "docs": "typedoc --entryPoints src/luhn.ts",
+    "dev": "vite",
+    "build": "type-check & vite build",
+    "type-check": "tsc --noEmit",
     "test": "vitest --run --reporter verbose"
   },
   "repository": {
@@ -23,12 +22,7 @@
   },
   "keywords": [
     "luhn",
-    "cc",
-    "luhn algorithm",
-    "credit card numbers validator",
-    "validation",
-    "cc validator",
-    "validator"
+    "credit card numbers validator"
   ],
   "author": "Aung Myat Moe",
   "license": "MIT",
@@ -39,9 +33,16 @@
   "devDependencies": {
     "@types/node": "^15.14.9",
     "esbuild": "^0.12.29",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.3",
+    "vite-plugin-dts": "^1.5.0",
     "vitest": "^0.23.4"
   },
   "engines": {
     "node": ">=16.11.0"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0"
   }
 }
