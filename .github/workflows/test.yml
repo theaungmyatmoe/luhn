@@ -1,6 +1,6 @@
 name: Test
 
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   test:
@@ -8,16 +8,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        nodejs: [10, 12, 14]
+        nodejs: [ 10, 12, 14,16 ]
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    # https://github.com/actions/setup-node
-    - uses: actions/setup-node@v2-beta
-      with:
-        node-version: ${{ matrix.nodejs }}
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ matrix.nodejs }}
 
-    - run: yarn install
-    - run: npm run test
-    - run: npm run build-browser
+      - run: npm install
+      - run: npm run test
