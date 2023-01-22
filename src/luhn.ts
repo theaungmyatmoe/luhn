@@ -4,7 +4,7 @@
  */
 export const validate = (pan: string): boolean => {
     const cardNumbers = Array.from<string, number>(pan, Number);
-    console.log(cardNumbers);
+ 
 
     // luhn algorithm
     let sum = 0;
