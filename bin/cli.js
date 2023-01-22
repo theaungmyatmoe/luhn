@@ -1,14 +1,12 @@
 #!/bin/env node
 import {program} from 'commander'
 import chalk from "chalk";
-import createLuhn from "../dist/luhn.js";
-
-const {validate} = createLuhn()
+import {validate} from "../dist/index.js";
 
 program
     .name('Luhn')
     .description('Credit Cards number validator')
-    .version('2.0.0')
+    .version('2.1.0')
 
 program.command('validate')
     .description('Validate card number')

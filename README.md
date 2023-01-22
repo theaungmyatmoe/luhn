@@ -9,76 +9,43 @@
 
 [![@amm834/luhn](https://snyk.io/advisor/npm-package/@amm834/luhn/badge.svg)](https://snyk.io/advisor/npm-package/@amm834/luhn)
 ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@amm834/luhn?style=plastic)
-![Maintenance](https://img.shields.io/maintenance/yes/2022?style=plastic)
 
 Luhn is a validation library the can validate Credit Card numbers which are valid or not. 👀
 
-# Installations
-
-> I would like you to use `pnpm` to save your time.
-
-**pnpm**
+## Installations
 
 ```bash
 pnpm add @amm834/luhn
 ```
 
-**yarn**
-
-```bash
-yarn add @amm834/luhn
-```
-
-**npm**
-
-```bash
-npm install  @amm834/luhn 
-```
-
 # Usage
 
-How easy it is?
+You can use `validate` function to validate the credit card number.
 
 ```js
-import createLuhn from '@amm834/luhn';
+import {validate} from "@amm834/luhn";
 
-const {validate} = createLuhn();
 
-const pan = 4895048712071025; // Credit Card Numbers
+const pan = "4895048712071025";
 
-const isValid = validate(pan);
-
-console.log(isValid); // true
+console.log(validate(pan)) //→ true
 ```
 
-## Browser
+## CLI
 
-```html
+`@amm834/luhn` support to use as CLI tool. You can use it as follows:
 
-<html>
-<head>
-    <!--   es6 module -->
-    <script src="./path/to/luhn.js" type="module"></script>
-</head>
-<body>
-Open the devtools 👇
-<script>
-    import createLuhn from "../dist/luhn.js";
-
-    const {validate} = createLuhn();
-
-    const pan = 4895048712071025;
-
-    console.log(validate(pan)) //→ true
-</script>
-</body>
-</html>
+```bash
+luhn validate 4895048712071025 #→ true
 ```
 
-# API
+## API
 
-```ts
-export default function createLuhn(): {
-    validate: (pan: string) => boolean;
-};
+```typescript 
+/**
+ *  @param {string} pan - The credit card number to validate.
+ * @returns boolean - A boolean value indicating whether the credit card number is valid.
+ */
+declare const validate: (pan: string) => boolean;
+
 ```

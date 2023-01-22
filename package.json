@@ -1,19 +1,18 @@
 {
   "name": "@amm834/luhn",
   "version": "2.0.0",
+  "main": "./dist/index.js",
   "type": "module",
-  "main": "./dist/luhn.js",
-  "module": "./dist/luhn.js",
+  "module": "./dist/index.js",
   "packageManager": "pnpm@7.12.0",
   "description": "Credit Card Number Validator",
-  "types": "./dist/luhn.d.ts",
+  "types": "./dist/index.d.ts",
   "bin": {
     "luhn": "bin/cli.js"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "type-check & vite build",
-    "type-check": "tsc --noEmit",
+    "dev": "tsup  src/index.ts --watch --format cjs,esm --dts",
+    "build": "tsup  src/index.ts  --format cjs,esm --dts",
     "test": "vitest --run --reporter verbose"
   },
   "repository": {
@@ -32,10 +31,8 @@
   "homepage": "https://github.com/amm834/luhn#readme",
   "devDependencies": {
     "@types/node": "^15.14.9",
-    "esbuild": "^0.12.29",
+    "tsup": "^6.5.0",
     "typescript": "^4.8.3",
-    "vite": "^3.1.3",
-    "vite-plugin-dts": "^1.5.0",
     "vitest": "^0.23.4"
   },
   "engines": {
