@@ -1,6 +1,7 @@
 # Luhn Algorithm
 
-![npm](https://img.shields.io/npm/dm/@amm834/luhn?style=plastic)
+![npm download per month](https://img.shields.io/npm/dm/@amm834/luhn?style=plastic)
+![npm download per year](https://img.shields.io/npm/dy/@amm834/luhn?style=plastic)
 [![Lint and test](https://github.com/amm834/luhn/actions/workflows/test.yml/badge.svg)](https://github.com/amm834/luhn/actions/workflows/test.yml)
 ![npm (scoped)](https://img.shields.io/npm/v/@amm834/luhn?logo=npm&style=plastic)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@amm834/luhn?logo=npm&style=plastic)
